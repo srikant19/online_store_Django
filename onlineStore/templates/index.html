@@ -28,39 +28,22 @@
       </ul>
 
     <input type="text" placeholder="search for items" id="search" width="auto">  
-    <input type="image"  src="{{baseurl}}/{{prod1.img}}" height="500px" width="1330px" >
+    <input type="image"  src="{% static 'images/stock3.jpg' %}" height="500px" width="1330px" >
   
     
     <div class="cards_container">
       <tag1>furnishing</tag1>
      <div class="cards">
-        <img src="{% static 'images/chair.jpeg' %}">
+        <img src="{{baseurl}}/{{prod1.img}}">
         <div class="container">
         <p>{{prod1.name}}</p>
         <p>Rs {{prod1.price}}</p>
         </div>
       </div>
     
-      <div class="cards">
-        <img src="{% static 'images/chair.jpeg' %}">
-        <div class="container">
-        <p>office chair</p>
-        </div>
-      </div>
+     
 
-      <div class="cards">
-        <img src="{% static 'images/chair.jpeg' %}">
-        <div class="container">
-        <p>office chair</p>
-        </div>
-      </div>
-
-      <div class="cards">
-        <img src="{% static 'images/chair.jpeg' %}">
-        <div class="container">
-        <p>office chair</p>
-        </div>
-      </div>
+      
 
     </div>
       
