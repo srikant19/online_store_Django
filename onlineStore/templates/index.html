@@ -1,4 +1,5 @@
 {% load static %}
+{% static "images" as  baseurl %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +28,7 @@
       </ul>
 
     <input type="text" placeholder="search for items" id="search" width="auto">  
-    <input type="image"  src="{% static 'images/stock3.jpg' %}" height="500px" width="1330px" >
+    <input type="image"  src="{{baseurl}}/{{prod1.img}}" height="500px" width="1330px" >
   
     
     <div class="cards_container">

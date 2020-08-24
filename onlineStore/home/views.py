@@ -7,4 +7,5 @@ def home(request):
     prod1 = product()
     prod1.name = 'chair'
     prod1.price = 400
+    prod1.img = "chair.jpeg"
     return render(request,'index.html',{'prod1': prod1})
