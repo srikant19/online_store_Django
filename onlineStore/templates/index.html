@@ -33,13 +33,16 @@
     
     <div class="cards_container">
       <tag1>furnishing</tag1>
+      {% for prod in products %}
      <div class="cards">
-        <img src="{{baseurl}}/{{prod1.img}}">
+        <img src="{{baseurl}}/{{prod.img}}">
         <div class="container">
-        <p>{{prod1.name}}</p>
-        <p>Rs {{prod1.price}}</p>
+        <p>{{prod.name}}</p>
+        <p>Rs {{prod.price}}</p>
         </div>
       </div>
+
+      {% endfor %}
     
      
 
