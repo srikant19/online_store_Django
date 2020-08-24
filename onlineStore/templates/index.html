@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box2">online store</div>
+        <div class="box3">
+            <a href="#" >sign in</a>
+        </div>
+    </div>
+    
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">Shops</a></li>
+        <li><a href="#contact">cart</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#about">Sign in</a></li>
+        <li><a href="#about">Sign up</a></li>
+      </ul>
+
+    <input type="text" placeholder="search for items" id="search" width="auto">  
+    <input type="image"  src="{% static 'images/stock3.jpg' %}" height="500px" width="1330px" >
+  
+    
+    <div class="cards_container">
+      <tag1>furnishing</tag1>
+     <div class="cards">
+        <img src="{% static 'images/chair.jpeg' %}">
+        <div class="container">
+        <p>office chair</p>
+        </div>
+      </div>
+    
+      <div class="cards">
+        <img src="{% static 'images/chair.jpeg' %}">
+        <div class="container">
+        <p>office chair</p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <img src="{% static 'images/chair.jpeg' %}">
+        <div class="container">
+        <p>office chair</p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <img src="{% static 'images/chair.jpeg' %}">
+        <div class="container">
+        <p>office chair</p>
+        </div>
+      </div>
+
+    </div>
+      
+</html> 
