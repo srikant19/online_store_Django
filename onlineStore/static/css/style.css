@@ -85,6 +85,15 @@
     background-color: #a3d2ca;
     height : 200px;
     border-radius: 5px;
+
+  }
+
+  div.offers{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
   }
   tag1{ 
     font: bold;
@@ -101,3 +110,5 @@
     width: 100%;
     border: 2px solid #206a5d;
   }
+
+  

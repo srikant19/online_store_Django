@@ -25,6 +25,8 @@ def home(request):
     prod4.price = 2500
     prod4.img = "wardrobe.jpeg"
 
+ 
+
    
     products = [prod1,prod2,prod3,prod4]
 
