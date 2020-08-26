@@ -18,14 +18,14 @@ def register(request):
             if password1 == password2:
                 if User.objects.filter(username=username).exists():
                    messages.info(request,'username taken')
-                   
+                   return redirect('register')
                 elif User.objects.filter(email=email).exists():
                     messages.info(request,'email taken')   
-                    
+                    return redirect('register')
                 else:
                   user = User.objects.create_user(username=username,password=password1,email=email,first_name=firstname,last_name=lastname)
                   user.save()
-                 
+                  return redirect('/')
                   
             else:
                 print('password not matching')

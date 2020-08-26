@@ -23,6 +23,11 @@
   <h3 id="fontcolor">contact : </h3><input type="number" name="contact" id = "fields" placeholder="contact number">
   <input type="submit">
 </form>
+<div>
+    {% for message in messages %}
+    <h3>{{message}}</h3>
+    {% endfor %}
+</div>
 
 </div>
     
