@@ -14,12 +14,13 @@
  <form action="register" method="POST">
     {% csrf_token %}
 
-  <h3 id="fontcolor">name : </h3><input type="text" id = "fields" placeholder="enter your name">
-  <h3 id="fontcolor">user name : </h3><input type="text" id = "fields" placeholder="enter user name">
-  <h3 id="fontcolor">email : </h3><input type="email" id = "fields" placeholder="enter e-mail address">
-  <h3 id="fontcolor">password : </h3><input type="password" id = "fields" placeholder="password">
-  <h3 id="fontcolor">re-type password : </h3><input type="password" id = "fields" placeholder="re-type password">
-  <h3 id="fontcolor">contact : </h3><input type="number" id = "fields" placeholder="contact number">
+  <h3 id="fontcolor">first name : </h3><input type="text" name="firstname" id = "fields" placeholder="enter your name">
+  <h3 id="fontcolor">last name : </h3><input type="text" name="lastname" id = "fields" placeholder="enter your last name">
+  <h3 id="fontcolor">user name : </h3><input type="text" name="username" id = "fields" placeholder="enter user name">
+  <h3 id="fontcolor">email : </h3><input type="email" name="email" id = "fields" placeholder="enter e-mail address">
+  <h3 id="fontcolor">password : </h3><input type="password" name="password1" id = "fields" placeholder="password">
+  <h3 id="fontcolor">re-type password : </h3><input type="password" name="password2" id = "fields" placeholder="re-type password">
+  <h3 id="fontcolor">contact : </h3><input type="number" name="contact" id = "fields" placeholder="contact number">
   <input type="submit">
 </form>
 </div>
