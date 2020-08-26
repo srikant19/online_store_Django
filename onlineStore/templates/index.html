@@ -23,8 +23,14 @@
         <li><a href="#news">Shops</a></li>
         <li><a href="#contact">cart</a></li>
         <li><a href="#about">About</a></li>
+
+        {% if user.is_authenticated %}
+        <li><a href="accounts/logout">log out</a></li>
+        <li><a href="#">Hello, {{user.first_name}}</a></li>
+        {% else %}
         <li><a href="accounts/login">Sign in</a></li>
         <li><a href="accounts/register">register</a></li>
+        {% endif %}
       </ul>
 
     <input type="text" placeholder="search for items" id="search" width="auto">  
