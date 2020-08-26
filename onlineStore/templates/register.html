@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | online shopping</title>
+    <link rel="stylesheet" href="css/registerpage.css">
+</head>
+<body background="images/registerpage.jpg">
+
+    <h1 id="fontcolor">Register Here</h1>
+<div class="formStyle">
+
+ <form action="register" method="POST">
+    {% csrf_token %}
+
+  <h3 id="fontcolor">name : </h3><input type="text" id = "fields" placeholder="enter your name">
+  <h3 id="fontcolor">user name : </h3><input type="text" id = "fields" placeholder="enter user name">
+  <h3 id="fontcolor">email : </h3><input type="email" id = "fields" placeholder="enter e-mail address">
+  <h3 id="fontcolor">password : </h3><input type="password" id = "fields" placeholder="password">
+  <h3 id="fontcolor">re-type password : </h3><input type="password" id = "fields" placeholder="re-type password">
+  <h3 id="fontcolor">contact : </h3><input type="number" id = "fields" placeholder="contact number">
+  <input type="submit">
+</form>
+</div>
+    
+</body>
+</html>
